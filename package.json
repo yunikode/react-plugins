@@ -1,0 +1,15 @@
+{
+  "name": "react-plugins",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "extension",
+    "growlers"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules growlers/node_modules",
+    "docker:build": "yarn clean && docker build . -t growlers"
+  }
+}
